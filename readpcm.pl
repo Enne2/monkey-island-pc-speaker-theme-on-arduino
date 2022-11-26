@@ -75,11 +75,11 @@ while ( $noteFrequencies[0] == 0 ) {
 
 print "int numberOfNotes = " . scalar(@noteFrequencies) . ";\n\n";
 
-print "PROGMEM prog_uint16_t melody[] = {\n";
+print "uint16_t melody[] = {\n";
 print "  " . join( ", ", @noteFrequencies ) . "\n";
 print "};\n\n";
 
-print "PROGMEM prog_uint16_t noteDurations[] = {\n";
+print "uint16_t noteDurations[] = {\n";
 print "  " . join( ", ", @noteDurations ) . "\n";
 print "};\n\n";
 
